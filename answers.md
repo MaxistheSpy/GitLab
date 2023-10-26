@@ -43,14 +43,22 @@ What branches would change, and how?
 git checkout test
 git merge top_N
 ```
-
+## Guess
+# I think it will attempt to merge the branches but run into a merge conflict
+# as the python files have the same name
+## Answer
+# it merged sucessfully and just added onto the end
 6. What do you think would happen if you ran the following commands?
 What branches would change, and how?
 ```
 git checkout top_ten
 git merge test
 ```
-
+## Guess
+# I think this will also run into a merge conflict as it will also have two files
+# that share a name
+## Answer
+# It merged test onto top ten sucessfully with no conflicts using a merge strategy.
 7. What do you think would happen if you ran the following commands?
 What branches would change, and how?
 ```
@@ -58,3 +66,12 @@ git checkout test
 git rebase top_ten
 git rebase top_N
 ```
+## Guess
+# I think this will rebase top ten ontop of test
+# then I think it will rebase top N ontop of that
+# ending with the final one being top_N
+# Since it is a rebase I think it will overwrite merge conflicts
+## Answer
+# This was the only one that had a merge conflict
+# I wound up having to manually delete lines to clean up the file
+# I also think it said it skipped over several commits
